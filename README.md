@@ -1,4 +1,8 @@
-<h1 align="center">get-llms-txt<br>Generate LLM-friendly llms.txt files from markdown and MDX content</h1>
+<div align="center">
+  <img src="./assets/logo.png" alt="get-llms-txt logo" width="200" />
+  
+  <h1>get-llms-txt<br>Generate LLM-friendly llms.txt files from markdown and MDX content</h1>
+</div>
 
 <p align="center">
   Generate <code>llms.txt</code> files and markdown versions of all content files for LLM consumption, following the <a href="https://llmstxt.org/">llms.txt specification</a>. Optimized for Next.js projects using MDX/MD files, but works with any project that uses markdown or MDX content.
