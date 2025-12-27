@@ -85,7 +85,7 @@ describe('processMDXFile', () => {
   let tempDir: string;
 
   beforeEach(() => {
-    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'next-llms-txt-test-'));
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'get-llms-txt-test-'));
   });
 
   afterEach(() => {
@@ -175,7 +175,7 @@ describe('processMDFile', () => {
   let tempDir: string;
 
   beforeEach(() => {
-    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'next-llms-txt-test-'));
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'get-llms-txt-test-'));
   });
 
   afterEach(() => {
@@ -220,7 +220,7 @@ describe('generateLLMsTxt', () => {
   let tempDir: string;
 
   beforeEach(() => {
-    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'next-llms-txt-test-'));
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'get-llms-txt-test-'));
   });
 
   afterEach(() => {

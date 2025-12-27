@@ -3,11 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1] - 2025-12-27
+
+### Changed
+
+- Renamed package from `get-llms-txt-generator` to `get-llms-txt` for broader compatibility
+- Updated all documentation and references
+
+### Bug Fixes
+
+- Fix bin script configuration for npm publishing
+- Fix linting and formatting issues
+
 ## [1.0.0] - 2025-12-27
 
 ### Features
 
-- Initial release of `next-llms-txt`
+- Initial release of `get-llms-txt`
 - Generate `llms.txt` files for Next.js projects following the [llms.txt specification](https://llmstxt.org/)
 - Support for both MDX and Markdown files
 - Automatic metadata extraction from:

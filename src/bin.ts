@@ -7,9 +7,9 @@ import * as path from 'path';
 const program = new Command();
 
 program
-  .name('next-llms-txt')
+  .name('get-llms-txt')
   .description('Generate LLM-friendly llms.txt files for your Next.js project')
-  .version('1.0.0');
+  .version('1.0.1');
 
 program
   .option('-c, --content-dir <dir>', 'Content directory to scan', './content')

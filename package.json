@@ -1,20 +1,20 @@
 {
-  "name": "next-llms-txt",
-  "version": "1.0.0",
-  "description": "Generate LLM-friendly llms.txt files for Next.js projects (and other markdown/MDX projects)",
+  "name": "get-llms-txt",
+  "version": "1.0.1",
+  "description": "Generate LLM-friendly llms.txt files from markdown and MDX content files",
   "license": "MIT",
-  "homepage": "https://github.com/romankurnovskii/next-llms-txt#readme",
+  "homepage": "https://github.com/romankurnovskii/get-llms-txt#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romankurnovskii/next-llms-txt.git"
+    "url": "git+https://github.com/romankurnovskii/get-llms-txt.git"
   },
   "bugs": {
-    "url": "https://github.com/romankurnovskii/next-llms-txt/issues"
+    "url": "https://github.com/romankurnovskii/get-llms-txt/issues"
   },
   "keywords": [
     "nextjs",
     "llms",
-    "llms-txt",
+    "get-llms-txt",
     "ai",
     "llm-context",
     "documentation",
@@ -41,7 +41,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "next-llms-txt": "./dist/bin.js"
+    "get-llms-txt": "./dist/bin.js"
   },
   "scripts": {
     "start": "tsx src/bin.ts",

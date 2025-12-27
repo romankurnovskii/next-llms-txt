@@ -1,4 +1,4 @@
-<h1 align="center">next-llms-txt<br>Generate LLM-friendly llms.txt files for Next.js projects</h1>
+<h1 align="center">get-llms-txt<br>Generate LLM-friendly llms.txt files from markdown and MDX content</h1>
 
 <p align="center">
   Generate <code>llms.txt</code> files and markdown versions of all content files for LLM consumption, following the <a href="https://llmstxt.org/">llms.txt specification</a>. Optimized for Next.js projects using MDX/MD files, but works with any project that uses markdown or MDX content.
@@ -24,25 +24,25 @@
 Install the package:
 
 ```sh
-npm install --save-dev next-llms-txt
+npm install --save-dev get-llms-txt
 ```
 
 or
 
 ```sh
-yarn add -D next-llms-txt
+yarn add -D get-llms-txt
 ```
 
 or
 
 ```sh
-pnpm add -D next-llms-txt
+pnpm add -D get-llms-txt
 ```
 
 Run the CLI:
 
 ```sh
-npx next-llms-txt
+npx get-llms-txt
 ```
 
 By default, this will:
@@ -54,6 +54,7 @@ By default, this will:
 **Basic usage for MD/MDX files:**
 
 The tool processes any `.md` or `.mdx` files in your content directory:
+
 - Extracts metadata (title, description, tags)
 - Converts MDX to plain markdown (removes JSX components)
 - Generates categorized `llms.txt` index file
@@ -62,7 +63,7 @@ The tool processes any `.md` or `.mdx` files in your content directory:
 ### CLI Options
 
 ```sh
-npx next-llms-txt [options]
+npx get-llms-txt [options]
 ```
 
 **Options:**
@@ -78,22 +79,22 @@ npx next-llms-txt [options]
 
 ```sh
 # Use default settings
-npx next-llms-txt
+npx get-llms-txt
 
 # Specify custom directories
-npx next-llms-txt --content-dir ./content --output-dir ./out
+npx get-llms-txt --content-dir ./content --output-dir ./out
 
 # With base URL for production
-npx next-llms-txt --base-url https://example.com --output-dir ./out
+npx get-llms-txt --base-url https://example.com --output-dir ./out
 
 # Custom project name and description
-npx next-llms-txt --project-name "My Blog" --project-description "Technical blog about software development"
+npx get-llms-txt --project-name "My Blog" --project-description "Technical blog about software development"
 ```
 
 ### Programmatic Usage
 
 ```typescript
-import {generateLlmsFiles} from 'next-llms-txt';
+import {generateLlmsFiles} from 'get-llms-txt';
 
 await generateLlmsFiles({
   contentDir: './content',
@@ -107,7 +108,7 @@ await generateLlmsFiles({
 ## 🛠️ Installation
 
 ```sh
-npm install --save-dev next-llms-txt
+npm install --save-dev get-llms-txt
 ```
 
 ## API
@@ -223,8 +224,8 @@ For Next.js static export (or any static site generator), add to your build scri
 ```json
 {
   "scripts": {
-    "build": "next build && npx next-llms-txt --output-dir ./out",
-    "deploy:prod": "next build && npx next-llms-txt --output-dir ./out --base-url https://example.com && firebase deploy --only hosting"
+    "build": "next build && npx get-llms-txt --output-dir ./out",
+    "deploy:prod": "next build && npx get-llms-txt --output-dir ./out --base-url https://example.com && firebase deploy --only hosting"
   }
 }
 ```
@@ -264,13 +265,13 @@ For Next.js static export (or any static site generator), add to your build scri
 
 MIT
 
-[package-name]: next-llms-txt
-[npm-url]: https://www.npmjs.com/package/next-llms-txt
-[npm-image]: https://img.shields.io/npm/v/next-llms-txt
-[github-license]: https://img.shields.io/github/license/romankurnovskii/next-llms-txt
-[github-license-url]: https://github.com/romankurnovskii/next-llms-txt/blob/main/LICENSE
-[npm-typescript]: https://img.shields.io/npm/types/next-llms-txt
-[build-status]: https://github.com/romankurnovskii/next-llms-txt/workflows/CI/badge.svg
-[build-status-url]: https://github.com/romankurnovskii/next-llms-txt
-[install-size]: https://packagephobia.com/badge?p=next-llms-txt
-[install-size-url]: https://packagephobia.com/result?p=next-llms-txt
+[package-name]: get-llms-txt
+[npm-url]: https://www.npmjs.com/package/get-llms-txt
+[npm-image]: https://img.shields.io/npm/v/get-llms-txt
+[github-license]: https://img.shields.io/github/license/romankurnovskii/get-llms-txt
+[github-license-url]: https://github.com/romankurnovskii/get-llms-txt/blob/main/LICENSE
+[npm-typescript]: https://img.shields.io/npm/types/get-llms-txt
+[build-status]: https://github.com/romankurnovskii/get-llms-txt/workflows/CI/badge.svg
+[build-status-url]: https://github.com/romankurnovskii/get-llms-txt
+[install-size]: https://packagephobia.com/badge?p=get-llms-txt
+[install-size-url]: https://packagephobia.com/result?p=get-llms-txt
