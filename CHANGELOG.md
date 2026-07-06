@@ -3,19 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1] - 2025-12-27
 
-<!-- 
+### Changed
 
-# 1.0.0 (2023-04-07)
+- Renamed package from `get-llms-txt-generator` to `get-llms-txt` for broader compatibility
+- Updated all documentation and references
 
-## Breaking changes
+### Bug Fixes
 
-## Features
+- Fix bin script configuration for npm publishing
+- Fix linting and formatting issues
 
-## Bug Fixes
+## [1.0.0] - 2025-12-27
 
-- correct the types
+### Features
 
-## Reverts
+- Initial release of `get-llms-txt`
+- Generate `llms.txt` files for Next.js projects following the [llms.txt specification](https://llmstxt.org/)
+- Support for both MDX and Markdown files
+- Automatic metadata extraction from:
+  - YAML frontmatter format
+  - Next.js `export const metadata` format
+- Convert MDX files to plain markdown:
+  - Remove JSX components
+  - Strip import statements
+  - Preserve markdown structure
+- Generate categorized file lists in `llms.txt`
+- Create individual markdown files in `<output-dir>/md/` directory
+- CLI interface with configurable options:
+  - Custom content directory
+  - Custom output directory
+  - Base URL configuration
+  - Project name and description
+- Programmatic API for integration into build scripts
+- Support for locale suffixes (`.en`, `.ru`, etc.)
+- Automatic handling of index files
+- TypeScript support with full type definitions
 
--->
+### Technical Details
+
+- Built with TypeScript
+- Uses `glob` for file discovery
+- Uses `commander` for CLI interface
+- Comprehensive test suite
+- Node.js 22+ required
